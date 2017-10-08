@@ -1,0 +1,45 @@
+Log file created at: 2017/10/08 11:33:09
+Running on machine: DESKTOP-6RQETRQ
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1008 11:33:09.528091  5444 ImuSourceAdapter.cpp:173] initializing IMU...
+I1008 11:33:09.529094  5444 ProducerAdapter.cpp:1526] Time to start "imu" is 1 ms
+I1008 11:33:09.529595  5444 ProducerAdapter.cpp:1581] Time to start button DAQ is 1 ms
+I1008 11:33:09.529595  5444 ProducerAdapter.cpp:1642] Time to start "depth(0) is 1 ms
+I1008 11:33:12.176668  5444 DepthSourceAdapter351.cpp:131] Detected 1 camera(s).
+I1008 11:33:14.686311   516 DXCompositor.cpp:156] [Compositor] Initializing Compositor.
+I1008 11:33:43.174593   516 MetaUnityClientServerBase.cpp:548] Producer Statistics:
+Sensor Name	running time (s)	frames in	fps	bytes/s	frames skipped	avg(dTHardware) (ms)	sigma(dTHardware) (ms)	avg(dTOA) (ms)	sigma(dTOA) (ms)	avg(dTQueuing) (ms)	sigma(dTQueuing) (ms)
+
+Client Statistics:
+
+Client Queuing Statistics:
+
+I1008 11:33:46.258158  5444 DepthSourceAdapter351.cpp:244] Royale Initialization complete!
+I1008 11:33:46.258158  5444 ProducerAdapter.cpp:1642] Time to start "depth(0) is 36729 ms
+I1008 11:33:46.258455  5444 ProducerAdapter.cpp:1642] Time to start "monochrome(0) is 36729 ms
+I1008 11:33:46.258455  5444 ProducerAdapter.cpp:1642] Time to start "monochrome(1) is 36729 ms
+I1008 11:33:46.258455  5444 ProducerAdapter.cpp:1642] Time to start "color(0) is 36730 ms
+I1008 11:34:00.977154  5444 SAQAdapter.cpp:186] Loaded Meta calibration from device
+E1008 11:34:00.977154  5444 ProducerAdapter.cpp:952] LoadCalibrationData: mic sensor not present in producer.
+I1008 11:34:01.002068  5444 ProducerAdapter.cpp:977] LoadCalibrationData: Setting camera model for rgb
+I1008 11:34:01.002569  5444 ProducerAdapter.cpp:1096] LoadCalibrationData: Setting relative pose for rgb
+I1008 11:34:01.002569  5444 ProducerAdapter.cpp:977] LoadCalibrationData: Setting camera model for depth
+I1008 11:34:01.002569  5444 ProducerAdapter.cpp:1096] LoadCalibrationData: Setting relative pose for depth
+E1008 11:34:01.002569  5444 ProducerAdapter.cpp:952] LoadCalibrationData: imu_left sensor not present in producer.
+I1008 11:34:01.002569  5444 ProducerAdapter.cpp:1026] LoadCalibrationData: Setting GYROSCOPE intrinsics for imu_right
+I1008 11:34:01.003089  5444 ProducerAdapter.cpp:1056] LoadCalibrationData: Setting ACCELEROMETER intrinsics for imu_right
+E1008 11:34:01.003089  5444 ProducerAdapter.cpp:1089] LoadCalibrationData: accelerometer has no relative pose data in calibration file.
+I1008 11:34:01.003089  5444 ProducerAdapter.cpp:977] LoadCalibrationData: Setting camera model for mono_left
+I1008 11:34:01.003089  5444 ProducerAdapter.cpp:1096] LoadCalibrationData: Setting relative pose for mono_left
+I1008 11:34:01.003595  5444 ProducerAdapter.cpp:977] LoadCalibrationData: Setting camera model for mono_right
+I1008 11:34:01.003595  5444 ProducerAdapter.cpp:1096] LoadCalibrationData: Setting relative pose for mono_right
+I1008 11:34:01.003595  5444 ProducerAdapter.cpp:1115] PMD to CAD cannot be loaded from file. Using default pose.  Note - until calibration is fixed, we must use default PMD to CAD transformation.
+I1008 11:34:01.003595  5444 ProducerAdapter.cpp:1141] CAD to Display pose sucessfully loaded.
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping Unknown Sensor(0) ...
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping IR Camera(0) ...
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping Button(0) ...
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping Mono Camera(0) ...
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping Mono Camera(1) ...
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping RGB Camera(0) ...
+I1008 11:34:02.907629  5444 ProducerAdapter.cpp:1801] Stopping IMU Sensor(0) ...
+I1008 11:34:03.246145  5444 RunnableAdapter.cpp:105] Normal termination of "Unknown Galileo producer".

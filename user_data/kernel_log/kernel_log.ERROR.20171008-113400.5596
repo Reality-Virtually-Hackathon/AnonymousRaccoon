@@ -1,0 +1,6 @@
+Log file created at: 2017/10/08 11:34:00
+Running on machine: DESKTOP-6RQETRQ
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E1008 11:34:00.977154  5444 ProducerAdapter.cpp:952] LoadCalibrationData: mic sensor not present in producer.
+E1008 11:34:01.002569  5444 ProducerAdapter.cpp:952] LoadCalibrationData: imu_left sensor not present in producer.
+E1008 11:34:01.003089  5444 ProducerAdapter.cpp:1089] LoadCalibrationData: accelerometer has no relative pose data in calibration file.
