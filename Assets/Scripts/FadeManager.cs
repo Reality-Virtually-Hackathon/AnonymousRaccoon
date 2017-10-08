@@ -21,10 +21,10 @@ public class FadeManager : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
 			if (counter == 0) {
-				backdrop.FadeIn ();
-			} else if (counter == 1) {
 				mergeCube.FadeOut (0.5f);
 				mergeCubeOutline.FadeIn (0.5f);
+			} else if (counter == 1) {
+				// do next thing
 			}
 			counter++;
 		}
