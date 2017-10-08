@@ -8,6 +8,8 @@ public class FadeManager : MonoBehaviour {
 	public Fader mergeCube;
 	public Fader mergeCubeOutline;
 
+	private int counter = 0;
+
 	// Use this for initialization
 	void Start () {
 		backdrop.FadeOutImmediate ();
@@ -17,13 +19,14 @@ public class FadeManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.A)) {
-			backdrop.FadeIn ();
+		if (Input.GetMouseButtonDown (0)) {
+			if (counter == 0) {
+				backdrop.FadeIn ();
+			} else if (counter == 1) {
+				mergeCube.FadeOut (0.5f);
+				mergeCubeOutline.FadeIn (0.5f);
+			}
+			counter++;
 		}
-		if (Input.GetKeyDown (KeyCode.S)) {
-			mergeCube.FadeOut (0.5f);
-			mergeCubeOutline.FadeIn (0.5f);
-		}
-
 	}
 }
