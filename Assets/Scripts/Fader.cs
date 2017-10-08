@@ -12,8 +12,8 @@ public class Fader : MonoBehaviour {
 	float fadeSpeed = 1f;
 
 	void Awake () {
-		FadeOutImmediate ();
 		rends = GetComponentsInChildren<Renderer> ();
+		FadeOutImmediate ();
 	}
 
 	// Use this for initialization
@@ -23,13 +23,6 @@ public class Fader : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.A)) {
-			FadeOut ();
-		}
-		if (Input.GetKeyDown (KeyCode.S)) {
-			FadeIn ();
-		}
-
 		if (fadingIn) {
 			curOpacity += fadeSpeed * Time.deltaTime;
 			if (curOpacity >= 1f) {
@@ -57,14 +50,16 @@ public class Fader : MonoBehaviour {
 		}
 	}
 
-	public void FadeIn () {
+	public void FadeIn (float speed = 1f) {
 		fadingIn = true;
 		fadingOut = false;
+		fadeSpeed = speed;
 	}
 
-	public void FadeOut () {
+	public void FadeOut (float speed = 1f) {
 		fadingIn = false;
 		fadingOut = true;
+		fadeSpeed = speed;
 	}
 
 	public void FadeOutImmediate () {
