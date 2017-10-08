@@ -160,10 +160,11 @@ namespace MergeCube
 				AddMenuElement(viewSwitchButton, viewSwitchPriority);
 			}
 
-			if (RecordingManager.isUsingRecordingPlugin)
-			{
-				AddMenuElement(recordingButton, recordingPriority);
-			}
+//			if (RecordingManager.isUsingRecordingPlugin)
+//			{
+//				AddMenuElement(recordingButton, recordingPriority);
+//			}
+
 				
 			//sort menubuttons by priority
 			RefreshMenuButtonPositions();
