@@ -12,7 +12,7 @@ public class ShapeTrigger : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		placers = new List<ShapePlacer> ();
 	}
 	
 	// Update is called once per frame
