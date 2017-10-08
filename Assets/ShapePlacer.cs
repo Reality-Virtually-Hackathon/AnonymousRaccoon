@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShapePlacer : MonoBehaviour {
 
 	public GameObject shapePrefab;
+	public float percentValue;
 
 	private GameObject curInstance;
 
@@ -16,7 +17,7 @@ public class ShapePlacer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (curInstance != null) {
-			curInstance.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.5f;
+			curInstance.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.35f;
 
 			if (Input.GetMouseButtonUp (0)) {
 				curInstance.GetComponent<Rigidbody> ().useGravity = true;
@@ -29,7 +30,7 @@ public class ShapePlacer : MonoBehaviour {
 	void OnMouseDown () {
 		curInstance = Instantiate (shapePrefab, transform.position, transform.rotation, transform);
 		curInstance.transform.localScale = Vector3.one;
-		curInstance.transform.SetParent (null);
+		curInstance.transform.SetParent (transform.parent);
 		curInstance.GetComponent<Rigidbody> ().useGravity = false;
 		curInstance.GetComponent<Rigidbody> ().isKinematic = true;
 	}

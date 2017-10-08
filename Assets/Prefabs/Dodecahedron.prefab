@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23626211023154994}
   - component: {fileID: 64425491586336838}
   - component: {fileID: 54173716426595668}
+  - component: {fileID: 114478585255266412}
   m_Layer: 0
   m_Name: Dodecahedron
   m_TagString: Untagged
@@ -111,3 +112,16 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 969348b20448c304a98e0e36b1468792, type: 3}
+--- !u!114 &114478585255266412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1843248497898654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b332409f38a7d41b8ec61f15aa011f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapePrefab: {fileID: 1843248497898654}
+  percentValue: 5.3
